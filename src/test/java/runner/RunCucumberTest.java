@@ -13,8 +13,8 @@ import io.cucumber.spring.CucumberContextConfiguration;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"json:target/reports/cucumberReport.json", "html:target/reports/cucumberReport.html"},
-		features = "C:\\Users\\leiss\\Documents\\Temp\\08-Qzando-test\\niverDoPai\\src\\main\\resources\\features",
-		glue = { "steaps" })
+		features = "C:\\Users\\leiss\\Documents\\Temp\\08-Qzando-test\\niverDoPai\\src\\test\\resources\\features",
+		glue = { "steps" })
 
 @CucumberContextConfiguration
 public class RunCucumberTest {
