@@ -18,7 +18,8 @@ public class TtsStep extends RunCucumberTest{
 	@Dado("que estou na página inicial do Natural Readers")
 	public void que_estou_na_página_inicial_do_natural_readers() {
 	homePage.acessarAplicacao();   
-	homePage.scrollDown();;
+	homePage.scrollDown();
+	homePage.selecionarVoz();
 	}
 	
 	@Quando("eu insiro o texto no campo de entrada")
@@ -28,11 +29,10 @@ public class TtsStep extends RunCucumberTest{
 	
 	@Quando("eu clico no botão de reprodução")
 	public void eu_clico_no_botão_de_reprodução() {
-		homePage.selecionarVoz();
 		homePage.clickReproducao();   
 	
 	try {
-		Thread.sleep(90000);
+		Thread.sleep(80000);
 	} 
 	catch (InterruptedException e) {
 	e.printStackTrace();

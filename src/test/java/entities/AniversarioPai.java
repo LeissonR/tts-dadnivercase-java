@@ -15,8 +15,6 @@ public class AniversarioPai {
 
 	Pai oMelhorPai = new Pai(nomePai, profissao, localTrabalho, nomeMae, nomeIrmao, cidadeNatal, cidadeAtual);
 
-	String texto = oMelhorPai.toString();
-
 	public String textoNiver() {
 		return oMelhorPai.toString();
 	}
